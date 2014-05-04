@@ -1,0 +1,16 @@
+[user]
+	name = Sascha van Gemmert
+	githubname= spil-sascha
+	email = 
+[alias]
+	b = branch -a
+	c = commit
+	ca = commit -a
+	r = remote -v
+	l = log --decorate=full --graph
+	s = status
+	co = checkout
+[color]
+	ui = true
+[merge]
+	tool = vimdif
