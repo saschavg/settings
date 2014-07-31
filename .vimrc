@@ -12,6 +12,7 @@ set showmatch
 set tags=.ctags;/
 
 syntax on
+filetype plugin on
 map ,t :CommandT<CR>
 imap ,,, <esc>bdwi<<esc>pa><cr></<esc>pa><esc>k2>>
 
