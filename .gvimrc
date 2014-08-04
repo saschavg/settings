@@ -25,6 +25,11 @@ let Tlist_Enable_Fold_Column = 0  " no fold column (only showing one file)
 let tlist_sql_settings = 'sql;P:package;t:table'
 let tlist_ant_settings = 'ant;p:Project;r:Property;t:Target'
 
+"" xml folding
+"
+"let g:xml_syntax_folding=0
+"au FileType xml setlocal foldmethod=syntax
+
 autocmd FileType make set noexpandtab
 
 map <F9> : call JavaScriptLint()<CR>
@@ -32,3 +37,5 @@ func! JavaScriptLint()
     exec "w"
     exec "!jsl -conf ~/jsl.conf -process % "
 endfunc
+
+colorscheme evening 
